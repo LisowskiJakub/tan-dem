@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    box-sizing: border-box;
+    background-color: $mainBgc;
+    font-family: $mainFont;
+    color: $mainFontColor;
+    width: 1080px;
+    margin: 0px auto;
+
+}
+
+@media screen and (max-width: 769px) {
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    color: none;
+}
+
+
+h3 {
+    font-family: $secondFont;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+}
+
+img {
+    display: block;
+}
+
+li {
+    list-style: none;
+}
+
+textarea {
+    resize: none;
+}
+
+
+.button {
+
+    border-radius: 0;
+    border: none;
+}
+
+.fileBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.file {
+    padding: 6px 12px;
+    margin: 12px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    //     &::after {
+    //         content: "";
+    //         display: block;
+    //     }
+}
+
+
+
+#message,
+#message__bottom {
+
+
+    font-family: $mainFont;
+    height: 180px;
+    padding: 0px 4px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+
+    &::placeholder {
+
+        border-bottom: solid 1px $mainBgc;
+    }
+
+    &:focus {
+        outline: none;
+        border: solid 1px $mainBgc;
+    }
+}
+
+
+
+#email,
+#email__bottom {
+
+    font-family: $mainFont;
+    height: 45px;
+    padding: 0px 4px;
+    margin: 24px 0px;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    &::placeholder {
+        border-bottom: solid 1px $mainBgc;
+    }
+
+    &:focus {
+        outline: none;
+        border: solid 1px $mainBgc;
+
+    }
+
+    #file {
+        display: none;
+
+
+
+
+    }
+
+}
+
+
+#file {
+    display: none;
+}
+
+
+@media screen and (max-width: 769px) {
+    #message {
+        height: 270px;
+    }
+
+    .button__send {
+        margin: 18px 0 0;
+        position: relative;
+        right: 0;
+        width: 100%;
+    }
+}

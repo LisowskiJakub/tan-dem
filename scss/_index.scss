@@ -1,0 +1,83 @@
+.front {
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px 15px;
+
+
+    &__wrapper {
+        position: relative;
+        right: 10px;
+        width: 360px;
+        height: 60px;
+    }
+}
+
+.logo__icon {
+    display: block;
+    width: 100%;
+    background-image: url(./images/logo2.svg);
+    background-repeat: no-repeat;
+
+}
+
+.button__primary {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 34px;
+    color: $mainFontColor;
+    background-color: $extraBgcDark;
+    border: none;
+    font-family: $secondFont;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 22px;
+    transition: background-color $trans, color $trans;
+
+    &:hover {
+        color: $mainBgc;
+        background-color: $accent;
+    }
+}
+
+.image__primary {
+    display: block;
+    width: 720px;
+    height: 500px;
+    background-image: url('./images/salon3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+    object-fit: cover;
+}
+
+
+@media screen and (max-width: 769px) {
+
+
+    .image__primary {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .logo__icon {
+
+
+        background-image: url(./images/logo.png);
+
+
+    }
+
+    .front__wrapper {
+        right: 0px;
+    }
+
+}

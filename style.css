@@ -1,0 +1,707 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #EDECE9;
+  font-family: "Montserrat", sans-serif;
+  color: #545454;
+  width: 1080px;
+  margin: 0px auto;
+}
+
+@media screen and (max-width: 769px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited {
+  color: none;
+}
+
+h3 {
+  font-family: "Forum", serif;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+}
+
+img {
+  display: block;
+}
+
+li {
+  list-style: none;
+}
+
+textarea {
+  resize: none;
+}
+
+.button {
+  border-radius: 0;
+  border: none;
+}
+
+.fileBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.file {
+  padding: 6px 12px;
+  margin: 12px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+#message,
+#message__bottom {
+  font-family: "Montserrat", sans-serif;
+  height: 180px;
+  padding: 0px 4px;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+#message::placeholder,
+#message__bottom::placeholder {
+  border-bottom: solid 1px #EDECE9;
+}
+#message:focus,
+#message__bottom:focus {
+  outline: none;
+  border: solid 1px #EDECE9;
+}
+
+#email,
+#email__bottom {
+  font-family: "Montserrat", sans-serif;
+  height: 45px;
+  padding: 0px 4px;
+  margin: 24px 0px;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+#email::placeholder,
+#email__bottom::placeholder {
+  border-bottom: solid 1px #EDECE9;
+}
+#email:focus,
+#email__bottom:focus {
+  outline: none;
+  border: solid 1px #EDECE9;
+}
+#email #file,
+#email__bottom #file {
+  display: none;
+}
+
+#file {
+  display: none;
+}
+
+@media screen and (max-width: 769px) {
+  #message {
+    height: 270px;
+  }
+  .button__send {
+    margin: 18px 0 0;
+    position: relative;
+    right: 0;
+    width: 100%;
+  }
+}
+.front {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0px 15px;
+}
+.front__wrapper {
+  position: relative;
+  right: 10px;
+  width: 360px;
+  height: 60px;
+}
+
+.logo__icon {
+  display: block;
+  width: 100%;
+  background-image: url(./images/logo2.svg);
+  background-repeat: no-repeat;
+}
+
+.button__primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 34px;
+  color: #545454;
+  background-color: #D6D2CF;
+  border: none;
+  font-family: "Forum", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  transition: background-color 250ms ease-out, color 250ms ease-out;
+}
+.button__primary:hover {
+  color: #EDECE9;
+  background-color: #004AAD;
+}
+
+.image__primary {
+  display: block;
+  width: 720px;
+  height: 500px;
+  background-image: url("./images/salon3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 769px) {
+  .image__primary {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .logo__icon {
+    background-image: url(./images/logo.png);
+  }
+  .front__wrapper {
+    right: 0px;
+  }
+}
+.description {
+  position: relative;
+  top: 360px;
+  left: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF;
+  width: 464px;
+  height: 336px;
+  padding: 20px 24px;
+}
+.description__title {
+  font-family: "Forum", serif;
+  font-weight: 400;
+  width: 100%;
+}
+.description__text {
+  padding: 24px 0;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+}
+.description__list {
+  display: flex;
+}
+.description__svg {
+  width: 40px;
+  height: 40px;
+  margin-left: 12px;
+  fill: #545454;
+  transition: fill 250ms ease-out;
+}
+.description__svg:hover {
+  fill: #004AAD;
+}
+
+@media screen and (max-width: 769px) {
+  .description {
+    left: 0px;
+    margin: 24px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+  padding: 24px 12px;
+}
+.footer__text {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 35px;
+  letter-spacing: 0em;
+}
+.footer__list {
+  display: flex;
+}
+.footer__svg {
+  width: 40px;
+  height: 40px;
+  margin-left: 12px;
+  fill: #545454;
+  transition: fill 250ms ease-out;
+}
+.footer__svg:hover {
+  fill: #004AAD;
+}
+
+@media screen and (max-width: 769px) {
+  .description {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.contact__picture {
+  background-image: url("./images/salon3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 720px;
+  height: 500px;
+  object-fit: contain;
+}
+.contact__form {
+  position: relative;
+  top: -200px;
+  left: 560px;
+  padding: 20px 24px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  width: 464px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.contact__title {
+  font-family: "Forum", serif;
+  width: 100%;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.contact__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contact__label {
+  display: flex;
+  align-items: end;
+  width: 100%;
+  border-bottom: solid 1px #EDECE9;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.contact__description {
+  padding: 6px 0;
+  list-style-position: inside;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: justify;
+}
+.contact .button__send {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 34px;
+  color: #545454;
+  background-color: #D6D2CF;
+  border: none;
+  font-family: "Forum", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  transition: background-color 250ms ease-out, color 250ms ease-out;
+}
+.contact .button__send:hover {
+  color: #EDECE9;
+  background-color: #004AAD;
+}
+
+@media screen and (max-width: 769px) {
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .contact__wrapper {
+    flex-direction: column;
+  }
+  .contact__picture {
+    position: static;
+    padding: 0px;
+    height: 300px;
+    width: 100%;
+  }
+  .contact__form {
+    top: -90px;
+    margin: 0px 24px;
+    left: 0px;
+    width: auto;
+  }
+  .contact__formWrapper {
+    width: 100%;
+    height: 100%;
+  }
+  .contact__mobilePicture {
+    height: 500px;
+    width: 100%;
+    background-image: url("./images/salon3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: contain;
+  }
+}
+.arguments__section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  top: -50px;
+}
+.arguments__section--left {
+  position: relative;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  top: -350px;
+}
+.arguments__picture {
+  position: relative;
+  background-image: url("./images/salon2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 720px;
+  height: 500px;
+  object-fit: contain;
+}
+.arguments__picture--left {
+  background-image: url("./images/salon4.png");
+  top: -300px;
+}
+.arguments__wrapper {
+  padding: 20px 24px;
+  position: relative;
+  top: -140px;
+  right: 560px;
+  background-color: #FFFFFF;
+  line-height: 21px;
+  width: 464px;
+}
+.arguments__wrapper--left {
+  top: 0px;
+  left: 574px;
+}
+.arguments__list {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.arguments__item {
+  margin-top: 24px;
+}
+.arguments__markup {
+  font-weight: 700;
+}
+
+@media screen and (max-width: 769px) {
+  .arguments {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .arguments__section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .arguments__section--left {
+    top: 0px;
+  }
+  .arguments__wrapper {
+    left: 0px;
+    margin: 0px 24px;
+    width: auto;
+    top: -90px;
+  }
+  .arguments__picture {
+    padding: 0px;
+    position: static;
+    height: 300px;
+    width: 100%;
+  }
+  .arguments__form {
+    left: 0px;
+  }
+  .arguments__formWrapper {
+    width: 100%;
+    height: 100%;
+  }
+}
+.contactBottom {
+  position: relative;
+  display: flex;
+  flex-direction: column-reverse;
+  top: -400px;
+}
+.contactBottom__info {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.contactBottom__picture {
+  position: relative;
+  top: -140px;
+  left: 370px;
+  background-image: url("./images/sypialnia1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 720px;
+  height: 500px;
+  object-fit: contain;
+}
+.contactBottom__form {
+  position: relative;
+  padding: 20px 24px;
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  width: 464px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.contactBottom__title {
+  font-family: "Forum", serif;
+  width: 100%;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.contactBottom__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contactBottom__label {
+  display: flex;
+  align-items: end;
+  width: 100%;
+  border-bottom: solid 1px #EDECE9;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.contactBottom__info {
+  margin-top: 24px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.contactBottom__description {
+  margin-top: 16px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.contactBottom .button__send {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 34px;
+  color: #545454;
+  background-color: #D6D2CF;
+  border: none;
+  font-family: "Forum", serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  transition: background-color 250ms ease-out, color 250ms ease-out;
+}
+.contactBottom .button__send:hover {
+  color: #EDECE9;
+  background-color: #004AAD;
+}
+
+@media screen and (max-width: 769px) {
+  .contactBottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    top: 0px;
+  }
+  .contactBottom__wrapper {
+    flex-direction: column;
+  }
+  .contactBottom__picture {
+    position: static;
+    padding: 0px;
+    height: 300px;
+    width: 100%;
+  }
+  .contactBottom__form {
+    margin: 0px 24px;
+    left: 0px;
+    width: auto;
+    top: -90px;
+  }
+  .contactBottom__formWrapper {
+    width: 100%;
+    height: 100%;
+  }
+  .contactBottom__info {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
+.directContact {
+  position: relative;
+  bottom: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0px;
+  border-top: solid 1px #545454;
+  font-family: "Montserrat", sans-serif;
+}
+.directContact__title {
+  font-family: "Montserrat", sans-serif;
+}
+.directContact__wrapper {
+  display: flex;
+  background-color: #D6D2CF;
+  padding: 24px 96px;
+  color: #004AAD;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 49px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.directContact__contacts {
+  display: flex;
+  padding: 40px 0;
+  flex-direction: column;
+  align-items: center;
+}
+.directContact__link {
+  display: flex;
+  align-items: center;
+}
+.directContact__svg {
+  height: 35px;
+  width: 43px;
+  fill: #545454;
+}
+.directContact__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+.directContact__item:hover {
+  color: #004AAD;
+  fill: #004AAD;
+}
+.directContact__place {
+  text-align: center;
+  display: flex;
+  flex-direction: column-reverse;
+  color: #545454;
+  padding-bottom: 21px;
+}
+
+@media screen and (max-width: 769px) {
+  .directContact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0px;
+  }
+  .directContact__title {
+    padding: 12px;
+  }
+  .directContact__wrapper {
+    background-color: #FFFFFF;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+  }
+  .directContact__contacts {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .directContact__link {
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 0em;
+  }
+  .directContact__place {
+    padding-top: 24px;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,125 @@
+.directContact {
+    position: relative;
+    bottom: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+    border-top: solid 1px $mainFontColor;
+    font-family: $mainFont;
+
+
+
+    &__title {
+        font-family: $mainFont;
+    }
+
+    &__wrapper {
+        display: flex;
+        background-color: $extraBgcDark;
+        padding: 24px 96px;
+        color: $accent;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 49px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    &__contacts {
+        display: flex;
+        padding: 40px 0;
+        flex-direction: column;
+        align-items: center;
+
+
+        // &:last-child {
+        //     border: solid 2px red;
+        // }
+
+    }
+
+
+    &__link {
+        display: flex;
+        align-items: center;
+
+    }
+
+    &__svg {
+        // width: 30px;
+        height: 35px;
+        width: 43px;
+        fill: $mainFontColor;
+
+        // margin: 0 20px 0 0;
+
+    }
+
+    &__item {
+
+        &:not(:last-child) {
+            margin-bottom: 12px;
+        }
+
+        &:hover {
+            color: $accent;
+            fill: $accent;
+        }
+
+
+    }
+
+    &__place {
+        text-align: center;
+        display: flex;
+        flex-direction: column-reverse;
+        color: $mainFontColor;
+        padding-bottom: 21px;
+    }
+
+
+}
+
+@media screen and (max-width: 769px) {
+    .directContact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        bottom: 0px;
+
+        &__title {
+            padding: 12px;
+
+        }
+
+        &__wrapper {
+            background-color: $extraBgc;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 12px
+        }
+
+        &__contacts {
+            width: 100%;
+            justify-content: flex-start;
+        }
+
+        &__link {
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+            font-weight: 500;
+            line-height: 22px;
+            letter-spacing: 0em;
+
+        }
+
+        &__place {
+            padding-top: 24px;
+        }
+    }
+
+}

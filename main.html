@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./images/diamond.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TAN-DEM</title>
+</head>
+
+<body>
+    <header class="front">
+        <div class="front__wrapper">
+            <a href="./index.html" class="front__link">
+                <svg class="logo__icon"></svg>
+            </a>
+        </div>
+    </header>
+
+
+    <section class="contact">
+        <div class="contact__picture"> </div>
+        <form action="/sendemail" method="POST" enctype="multipart/form-data" class="contact__form" autocomplete="off">
+            <h2 class="contact__title">Wypełnij formularz</h2>
+            <input type="email" name="to" id="email" placeholder="Adres e-mail:" required>
+            <textarea id="message" placeholder="Treść zapytania:" name="body"></textarea>
+            <div class="fileBox" id="fileBox"></div>
+            <div class="contact__wrapper">
+                <label for="file" class="contact__label">załącz plik</label>
+                <input id="file" type="file" id="email" name="attachments" placeholder="załącz plik" multiple>
+                <button class="button button__send" type="submit">wyślij</button>
+            </div>
+            <ul>
+                <li class="contact__description">Wyrażam zgodę na przetwarzanie danych osobowych w celu przesłania na
+                    mój adres e-mail odpowiedzi na zapytanie Tan-dem Studio</li>
+            </ul>
+        </form>
+
+
+    </section>
+
+
+    <section class="arguments__section">
+        <div class="arguments__picture"></div>
+        <div class="arguments__wrapper">
+            <h3 class="arguments__title">1. Co warto uwzględnić w zapytaniu?</h3>
+            <ul class="arguments__list">
+                <li class="arguments__item"><span class="arguments__markup">Rodzaj współpracy</span>- interesuje Cię
+
+                    konsultacja, projekt kompleksowy czy
+                    koncepcyjny?
+                    A może nie wiesz, jaka usługa będzie dla Ciebie najbardziej odpowiednia?
+                    Napisz nam o tym.</li>
+                <li class="arguments__item"><span class="arguments__markup">Rodzaj inwestycji</span>- mieszkanie czy
+                    dom?
+                    Dla Ciebie czy na wynajem?
+                    Może chcesz zlecić projekt lokalu usługowego? Może jesteś przed zakupem mieszkania, budową domu?
+                </li>
+                <li class="arguments__item"><span class="arguments__markup">Lokalizacja</span> - gdzie znajduje się
+                    nieruchomość? Miasto, ulica.</li>
+                <li class="arguments__item"><span class="arguments__markup">Metraż</span> - podaj metraż lokalu oraz
+                    jeśli
+                    to możliwe - załącz plany
+                    nieruchomości.
+                    Wycenę ZAWSZE opieramy o rzut nieruchomości</li>
+                <li class="arguments__item"><span class="arguments__markup">Termin realizacji </span>- na KIEDY musisz
+                    mieć
+                    gotowy projekt? Weź pod uwagę,
+                    że średni czas na wykonanie projektu to 3-4 miesiące. Oprócz tego - najprawdopodobniej na
+                    rozpoczęcie projektu będziesz musiał/a poczekać minimum miesiąc.</li>
+                <li class="arguments__item"><span class="arguments__markup">Wytyczne </span>- napisz nam, co jest dla
+                    Ciebie najważniejsze, jakie rozwiązania
+                    Ci się podobają a jakie mniej. Kto będzie mieszkał w zaprojektowanej przestrzeni (np. rodzina 2+1,
+                    singiel czy para z dwoma pupilami). Daj nam znać, co Ci się podoba :)</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section class="arguments__section arguments__section--left">
+        <div class="arguments__picture arguments__picture--left"></div>
+        <div class="arguments__wrapper arguments__wrapper--left">
+            <h3 class="arguments__title">2. Co robimy najczęściej?</h3>
+            <ul class="arguments__list">
+                <li class="arguments__item"><span class="arguments__markup">Projekty kompleksowe</span>
+                    - specjalizujemy się w projektach wnętrz prywatnych, w zakresie kompleksowym. Oznacza to, że
+                    wykonujemy dla Was fotorealistyczne wizualizacje w oparciu
+                    o przygotowaną listę zakupów oraz szczegółowy kosztorys projektowy. Naszą podstawą jest Twój budżet
+                    - od niego wychodzimy, w drugiej kolejności proponujemy produkty, rozwiązania funkcjonalne czy
+                    materiały wykończeniowe. Prowadzimy również nadzory wykonawcze.
+                </li>
+                <li class="arguments__item"><span class="arguments__markup">
+                        Konsultacje</span> - chętnie udzielamy również porad projektowych, w formie spotkań on-line lub
+                    spotkań na budowie.
+                </li>
+                <li class="arguments__item"><span class="arguments__markup">Termin realizacji</span>
+                    - na KIEDY musisz mieć gotowy projekt? Weź pod uwagę,
+                    że średni czas na wykonanie projektu to 3-4 miesiące. Oprócz tego - najprawdopodobniej na
+                    rozpoczęcie projektu będziesz musiał/a poczekać minimum miesiąc.
+                </li>
+                <li class="arguments__item"><span class="arguments__markup">Wytyczne</span>
+                    - napisz nam, co jest dla Ciebie najważniejsze, jakie rozwiązania Ci się podobają a jakie mniej. Kto
+                    będzie mieszkał w zaprojektowanej przestrzeni (np. rodzina 2+1, singiel czy para z dwoma pupilami).
+                    Daj nam znać, co Ci się podoba &#128578;
+                </li>
+
+            </ul>
+
+        </div>
+    </section>
+
+
+
+
+    <section class="contactBottom">
+        <div class="contactBottom__picture"> </div>
+        <form class="contactBottom__form">
+            <h2 class="contactBottom__title">Wypełnij formularz</h2>
+            <p class="contactBottom__info">Wyślij do nas zapytanie oraz dołącz niezbędne pliki. W odpowiedzi prześlemy
+                ofertę oraz przedstawimy warunki współpracy. Jeśli będzie taka potrzeba - doradzimy, która opcja
+                współpracy będzie dla Ciebie najlepsza.</p>
+            <input type="email" id="email" placeholder="Adres e-mail:">
+            <textarea id="message" placeholder="Treść zapytania:"></textarea>
+            <div class="contactBottom__wrapper">
+                <label for="file" class="contactBottom__label">załącz plik</label>
+                <input id="file" type="file" id="email" placeholder="załącz plik" multiple>
+                <button class="button button__send" type="submit">wyślij</button>
+
+
+            </div>
+            <ul>
+                <li class="contactBottom__description">Wyrażam zgodę na przetwarzanie danych osobowych w celu przesłania
+                    na mój adres e-mail odpowiedzi na zapytanie Tan-dem Studio</li>
+            </ul>
+        </form>
+
+
+    </section>
+
+
+
+    <footer class="directContact">
+        <h3 class="directContact__title">Bezpośredni kontakt</h3>
+        <ul class="directContact__contacts">
+            <li class="directContact__item"><a href="mailto:biuro@tan-dem.studio" class="directContact__link">
+                    <svg class="directContact__svg">
+                        <use href="./images/icons.svg#envelope"></use>
+                    </svg>
+                    <span>biuro@tan-dem.studio</span>
+                </a></li>
+            <li class="directContact__item"> <a href="tel:+48690817484"
+                    class="directContact__link directcContact__email">
+                    <svg class="directContact__svg">
+                        <use href="./images/icons.svg#phone"></use>
+                    </svg>
+                    <span>690 817 484</span>
+                </a></li>
+            <li class="directContact__item"> <a href="tel:+48530870470"
+                    class="directContact__link directcContact__email">
+                    <svg class="directContact__svg">
+                        <use href="./images/icons.svg#phone"></use>
+                    </svg>
+                    <span>530 870 470</span>
+                </a></li>
+        </ul>
+
+        <div class="directContact__place">
+            Stacjonarnie: Poznan i okolice.<br>
+            On-line/ hybrydowo: Cała Polska.
+        </div>
+
+    </footer>
+
+
+
+
+    <script type="module" src="./main.js"></script>
+</body>
+
+</html>
