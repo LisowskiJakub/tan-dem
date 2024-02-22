@@ -71,13 +71,17 @@
     .logo__icon {
 
 
-        background-image: url(./images/logo.png);
+        background-image: url(./images/logomobile.svg);
 
 
     }
 
     .front__wrapper {
-        right: 0px;
+        position: static;
+        display: flex;
+        justify-content: center;
+        width: 180px;
+        height: 30px;
     }
 
 }

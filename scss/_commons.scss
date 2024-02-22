@@ -10,6 +10,7 @@ body {
     font-family: $mainFont;
     color: $mainFontColor;
     width: 1080px;
+    max-height: 4000px;
     margin: 0px auto;
 
 }
@@ -91,7 +92,7 @@ textarea {
 
 
     font-family: $mainFont;
-    height: 180px;
+    height: 150px;
     padding: 0px 4px;
     border: none;
     font-size: 16px;

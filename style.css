@@ -9,6 +9,7 @@ body {
   font-family: "Montserrat", sans-serif;
   color: #545454;
   width: 1080px;
+  max-height: 4000px;
   margin: 0px auto;
 }
 
@@ -74,7 +75,7 @@ textarea {
 #message,
 #message__bottom {
   font-family: "Montserrat", sans-serif;
-  height: 180px;
+  height: 150px;
   padding: 0px 4px;
   border: none;
   font-size: 16px;
@@ -194,10 +195,14 @@ textarea {
     width: 100%;
   }
   .logo__icon {
-    background-image: url(./images/logo.png);
+    background-image: url(./images/logomobile.svg);
   }
   .front__wrapper {
-    right: 0px;
+    position: static;
+    display: flex;
+    justify-content: center;
+    width: 180px;
+    height: 30px;
   }
 }
 .description {
@@ -397,7 +402,7 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  top: -50px;
+  top: -150px;
 }
 .arguments__section--left {
   position: relative;
@@ -486,7 +491,7 @@ textarea {
   position: relative;
   display: flex;
   flex-direction: column-reverse;
-  top: -400px;
+  top: -550px;
 }
 .contactBottom__info {
   font-size: 13px;
@@ -619,7 +624,7 @@ textarea {
 }
 .directContact {
   position: relative;
-  bottom: 250px;
+  bottom: 550px;
   display: flex;
   flex-direction: column;
   justify-content: center;
